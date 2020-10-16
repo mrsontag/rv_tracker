@@ -7,7 +7,7 @@ const ShowAll = props => {
     const [rvs, setRvs ] = useState([]);
     useEffect(() => {
         console.log("Ran the use effect!");
-        Axios.get("http://localhost:8000/api/rvs/")
+        Axios.get("http://127.0.0.1:8000/api/rvs/")
             .then(response => {
                 console.log(response.data);
                 setRvs(response.data);
